@@ -226,7 +226,7 @@ ReportHandlerRegistry.register("summary", SummaryReportHandler())
 ┌─────────────────────────────────────────────────────────────────┐
 │                         API Layer (FastAPI)                     │
 │  POST /simulations  GET /simulations/{id}                       │
-│ GET /simulations/{id}/result                                    │
+│  GET /simulations/{id}/result                                   │
 │  POST /reports      GET /reports/{id}                           │
 └─────────────────────────────────────────────────────────────────┘
                               │
