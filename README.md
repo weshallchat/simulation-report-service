@@ -224,14 +224,15 @@ ReportHandlerRegistry.register("summary", SummaryReportHandler())
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         API Layer (FastAPI)                      │
-│  POST /simulations  GET /simulations/{id}  GET /simulations/{id}/result │
-│  POST /reports      GET /reports/{id}                            │
+│                         API Layer (FastAPI)                     │
+│  POST /simulations  GET /simulations/{id}                       │
+│ GET /simulations/{id}/result                                    │
+│  POST /reports      GET /reports/{id}                           │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      Service Layer                               │
+│                      Service Layer                              │
 │   SimulationService (agnostic)    ReportService (agnostic)      │
 └─────────────────────────────────────────────────────────────────┘
                               │
